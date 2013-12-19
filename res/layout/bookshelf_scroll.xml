@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.fuyue.util.ui.scrollpager.ScrollPageView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_bookshelf_bookinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="85dip"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_bookshelf_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="18dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <ProgressBar
+                android:id="@+id/progress_bookshelf"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dip"
+                android:layout_height="3dip"
+                android:layout_weight="2"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_bookshelf_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#888888"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bookshelf_imageinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="85dip"
+        android:layout_margin="20dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/text_image_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="18dip" />
+
+        <View
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_bookshelf_save" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存本地"
+            android:textColor="#888888"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</LinearLayout>

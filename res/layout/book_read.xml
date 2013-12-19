@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kyview.AdViewLayout
+        android:id="@+id/ad_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_view" >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_read_control"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" >
+
+            <View
+                android:id="@+id/btn_read_control_dismiss"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/layout_read_control_btn"
+                android:background="@color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/layout_read_control_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_read_controller"
+                android:orientation="vertical"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" >
+
+                <LinearLayout
+                    android:id="@+id/layout_read_control_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:weightSum="4" >
+
+                    <TextView
+                        android:id="@+id/btn_read_control_fontsize_small"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:text="小字号"
+                        android:textColor="#aaaaaa"
+                        android:textSize="13dip" />
+
+                    <TextView
+                        android:id="@+id/btn_read_control_fontsize_normal"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:text="中字号"
+                        android:textColor="#aaaaaa"
+                        android:textSize="13dip" />
+
+                    <TextView
+                        android:id="@+id/btn_read_control_fontsize_large"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="5dip"
+                        android:paddingTop="5dip"
+                        android:text="大字号"
+                        android:textColor="#aaaaaa"
+                        android:textSize="13dip" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip" >
+
+                    <Button
+                        android:id="@+id/btn_read_control_back"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_read_controller_back" />
+
+                    <Button
+                        android:id="@+id/btn_read_control_fontsize"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dip"
+                        android:layout_toLeftOf="@+id/btn_read_control_readstyle"
+                        android:background="@drawable/btn_read_controller_font" />
+
+                    <Button
+                        android:id="@+id/btn_read_control_readstyle"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dip"
+                        android:layout_toLeftOf="@+id/btn_read_control_orientation"
+                        android:background="@drawable/btn_read_controller_day" />
+
+                    <Button
+                        android:id="@+id/btn_read_control_orientation"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dip"
+                        android:background="@drawable/btn_read_controller_orientation" />
+
+                    <!-- 最后一页 -->
+
+                    <Button
+                        android:id="@+id/btn_read_control_save"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dip"
+                        android:background="@drawable/btn_read_controller_save" />
+
+                    <TextView
+                        android:id="@+id/text_read_control_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="本书完结"
+                        android:textColor="#aaaaaa"
+                        android:textSize="15dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

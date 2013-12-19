@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+
+    <books>
+
+        <!-- id为图书唯一标识，name为书名，thumbimage为缩略图文件位置，cover为图书封面文件位置,backcover为图书封底文件位置, filepath为电子书的实体文件位置 -->
+
+        <book
+            id="1"
+            name="灵兽九变"
+            backcover="cover/cover6.jpg"
+            cover="cover/cover1.jpg"
+            filepath="book/book1.txt"
+            thumbimage="cover/cover1.jpg" >
+        </book>
+
+        <book
+            id="2"
+            name="无尽神功"
+            backcover="cover/cover6.jpg"
+            cover="cover/cover2.jpg"
+            filepath="book/book2.txt"
+            thumbimage="cover/cover2.jpg" >
+        </book>
+
+        <book
+            id="3"
+            name="无尽神功-短"
+            backcover="cover/cover6.jpg"
+            cover="cover/cover3.jpg"
+            filepath="book/book3.txt"
+            thumbimage="cover/cover3.jpg" >
+        </book>
+
+        <book
+            id="4"
+            name="无尽神功-超短"
+            backcover="cover/cover6.jpg"
+            cover="cover/cover4.jpg"
+            filepath="book/book4.txt"
+            thumbimage="cover/cover4.jpg" >
+        </book>
+
+        <book
+            id="5"
+            name="无尽神功-最短"
+            backcover="cover/cover6.jpg"
+            cover="cover/cover5.jpg"
+            filepath="book/book5.txt"
+            thumbimage="cover/cover5.jpg" >
+        </book>
+    </books>
+
+    <images>
+
+        <!-- name为图片名，filepath为图片位置 -->
+
+        <image
+            name="萌图"
+            filepath="image/cover6.jpg" >
+        </image>
+    </images>
+
+</data>

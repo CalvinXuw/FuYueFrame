@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- 通用字体大小 -->
+    <dimen name="font_title">20sp</dimen>
+    <dimen name="font_slidebar">16sp</dimen>
+
+    <!-- 列表项字号 -->
+    <dimen name="font_list_title">16sp</dimen>
+    <dimen name="font_list_subtitle">15sp</dimen>
+    <dimen name="font_list_tag">12sp</dimen>
+    <dimen name="font_list_location">13sp</dimen>
+    <dimen name="font_list_author">13sp</dimen>
+    <dimen name="font_list_desc_little">13sp</dimen>
+
+</resources>

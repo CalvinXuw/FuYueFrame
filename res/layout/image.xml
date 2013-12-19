@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a2829"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#2a2829" />
+
+    <RelativeLayout
+        android:id="@+id/layout_image_control"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_read_controller" >
+
+        <Button
+            android:id="@+id/btn_image_control_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_read_controller_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/btn_image_control_back"
+            android:text="已完结，敬请期待下期更新"
+            android:textColor="#aaaaaa"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_image_control_save"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/btn_read_controller_save" />
+    </RelativeLayout>
+
+</RelativeLayout>

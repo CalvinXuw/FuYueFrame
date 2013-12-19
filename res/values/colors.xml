@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 颜色 -->
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+
+    <!-- 通用颜色 -->
+    <color name="font_title">#3f3f3f</color>
+    <color name="background_navigation">#e7e7e7</color>
+    <color name="background_navigation_dark">#292929</color>
+    <color name="background_navigation_divider">#d2d2d2</color>
+    <color name="background_navigation_divider_dark">#252525</color>
+    <color name="btn_blue_act">#005195</color>
+    <color name="btn_blue_nor">#0970c7</color>
+    <color name="btn_orange_act">#f76e00</color>
+    <color name="btn_orange_nor">#f79100</color>
+    <color name="btn_disable">#999999</color>
+    <color name="section_split">#d2d2d2</color>
+
+    <!-- 列表项颜色 -->
+    <color name="divider">#dbdbdb</color>
+    <color name="font_list_title">#222222</color>
+    <color name="font_list_desc">#444444</color>
+    <color name="font_list_tag">#999999</color>
+    <color name="font_list_header">#FFFFFF</color>
+    <color name="font_list_cover">#FFFFFF</color>
+    <color name="font_list_location">#0970c7</color>
+    <color name="background_listitem_nor">#f7f7f7</color>
+    <color name="background_listitem_act">#dbdbdb</color>
+    <color name="background_fragment">#ffffff</color>
+
+</resources>
